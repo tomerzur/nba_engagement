@@ -1,0 +1,61 @@
+﻿data source,type of correlation,reg season or playoffs,metric,correlation w/ win%,correlation w/ games won,correlation w/ cum. win %,correlation w/ cum. games won,correlation w/ playoff games
+Harris Brand Platform,Pearson,Regular Season,Q1010,0.037414943,-0.032984242,-0.053288411,-0.054769579,
+Harris Brand Platform,Pearson,Regular Season,Q3010,0.03260408,-1.09E-05,0.037350912,0.047397442,
+Harris Brand Platform,Pearson,Regular Season,Q1030,0.144999197,0.013574857,-0.019277447,0.003051126,
+Harris Brand Platform,Pearson,Regular Season,Q1040,0.03150905,-0.047751392,-0.066532745,-0.003861138,
+Harris Brand Platform,Pearson,Playoffs,Q1010,,,,,-0.01744608
+Harris Brand Platform,Pearson,Playoffs,Q3010,,,,,-0.12251622
+Harris Brand Platform,Pearson,Playoffs,Q1030,,,,,0.026268885
+Harris Brand Platform,Pearson,Playoffs,Q1040,,,,,-0.094987712
+Harris Brand Platform,Spearman,Regular Season,Q1010,0.011046141,-0.019827823,-0.071532217,-0.035369745,
+Harris Brand Platform,Spearman,Regular Season,Q3010,-0.003029231,-0.007911743,0.02750225,0.062677581,
+Harris Brand Platform,Spearman,Regular Season,Q1030,0.106503408,-0.010056863,-0.016368301,-0.006600108,
+Harris Brand Platform,Spearman,Regular Season,Q1040,0.005961543,-0.047193721,-0.094376643,-0.007016413,
+Harris Brand Platform,Spearman,Playoffs,Q1010,,,,,-0.07650916
+Harris Brand Platform,Spearman,Playoffs,Q3010,,,,,-0.120877786
+Harris Brand Platform,Spearman,Playoffs,Q1030,,,,,-0.029408859
+Harris Brand Platform,Spearman,Playoffs,Q1040,,,,,-0.011640713
+Samba,Pearson,Regular Season,nba games watched,0.220431041,-0.058491251,0.430501665,0.633585041,
+Samba,Pearson,Regular Season,nba tv shows watched,0.225208498,-0.040656543,0.437657846,0.620113561,
+Samba,Pearson,Regular Season,nba games watched - unique users,0.288753175,0.084730456,0.444816859,0.511995764,
+Samba,Pearson,Regular Season,nba tv shows watched - unique users,0.284719478,0.098407929,0.439900098,0.50319825,
+Samba,Pearson,Regular Season,shows per user,0.134580282,-0.132113668,0.44612295,0.696260329,
+Samba,Pearson,Regular Season,games per user,0.1317309,-0.145000622,0.434066878,0.699093505,
+Samba,Pearson,Regular Season,% users watched show,0.23100208,0.007534304,0.582371892,0.751013908,
+Samba,Pearson,Regular Season,% users watched game,0.231981167,-0.007332838,0.562588135,0.724750927,
+Samba,Pearson,Playoffs,nba games watched,,,,,0.628384877
+Samba,Pearson,Playoffs,nba tv shows watched,,,,,0.623038556
+Samba,Pearson,Playoffs,nba games watched - unique users,,,,,0.494086253
+Samba,Pearson,Playoffs,nba tv shows watched - unique users,,,,,0.434792401
+Samba,Pearson,Playoffs,shows per user,,,,,0.662361007
+Samba,Pearson,Playoffs,games per user,,,,,0.66397165
+Samba,Pearson,Playoffs,% users watched show,,,,,0.63285561
+Samba,Pearson,Playoffs,% users watched game,,,,,0.699395634
+Samba,Spearman,Regular Season,nba games watched,0.239471244,0.088876057,0.496168546,0.606888327,
+Samba,Spearman,Regular Season,nba tv shows watched,0.231616329,0.088768001,0.486519737,0.586540169,
+Samba,Spearman,Regular Season,nba games watched - unique users,0.29617927,0.160473285,0.469621707,0.461694468,
+Samba,Spearman,Regular Season,nba tv shows watched - unique users,0.292525821,0.169443058,0.45988768,0.457664763,
+Samba,Spearman,Regular Season,shows per user,0.197752444,0.083801927,0.602293108,0.778346484,
+Samba,Spearman,Regular Season,games per user,0.217650292,0.101870916,0.611010115,0.786417109,
+Samba,Spearman,Regular Season,% users watched show,0.265954265,0.122788756,0.625386335,0.763276309,
+Samba,Spearman,Regular Season,% users watched game,0.28232082,0.129382423,0.626498667,0.727508053,
+Samba,Spearman,Playoffs,nba games watched,,,,,0.555621958
+Samba,Spearman,Playoffs,nba tv shows watched,,,,,0.541300339
+Samba,Spearman,Playoffs,nba games watched - unique users,,,,,0.388559033
+Samba,Spearman,Playoffs,nba tv shows watched - unique users,,,,,0.335973596
+Samba,Spearman,Playoffs,shows per user,,,,,0.611586797
+Samba,Spearman,Playoffs,games per user,,,,,0.625957208
+Samba,Spearman,Playoffs,% users watched show,,,,,0.516978408
+Samba,Spearman,Playoffs,% users watched game,,,,,0.598143441
+Luth,Pearson,Regular Season,nba web/app unique visitors,0.107675362,0.163694787,0.182591233,0.175997323,
+Luth,Pearson,Regular Season,search events (unique users),0.178753202,0.122250752,-0.163983291,-0.167688537,
+Luth,Pearson,Regular Season,youtube videos watched (unique users),0.154319362,0.257373882,0.327616352,0.313792825,
+Luth,Pearson,Playoffs,nba web/app unique visitors,,,,,0.27507474
+Luth,Pearson,Playoffs,search events (unique users),,,,,0.256494461
+Luth,Pearson,Playoffs,youtube videos watched (unique users),,,,,0.129978098
+Luth,Spearman,Regular Season,nba web/app unique visitors,0.135564861,0.1813731,0.158944238,0.148793643,
+Luth,Spearman,Regular Season,search events (unique users),0.246153859,0.196713114,-0.128118689,-0.133652754,
+Luth,Spearman,Regular Season,youtube videos watched (unique users),0.153974903,0.2502098,0.308393107,0.298137864,
+Luth,Spearman,Playoffs,nba web/app unique visitors,,,,,0.097390615
+Luth,Spearman,Playoffs,search events (unique users),,,,,-0.022474757
+Luth,Spearman,Playoffs,youtube videos watched (unique users),,,,,0.009632039
