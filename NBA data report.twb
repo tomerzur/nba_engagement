@@ -7155,8 +7155,8 @@ I calculated correlations for the luth data metrics over 3-month periods since w
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='125' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='124' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='127' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='126' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='8750' id='13' mode='dropdown' name='Joined Regular Season Results (Team1)' param='[federated.09jyw2m0d5jfgy18n50970soncza].[Teams with Data]' type-v2='filter' w='12000' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -7405,8 +7405,8 @@ I calculated correlations for the luth data metrics over 3-month periods since w
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='120' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='119' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='122' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='121' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='8750' id='11' mode='dropdown' name='Luth/Samba/HBP choose metric (tm1)' param='[federated.09jyw2m0d5jfgy18n50970soncza (copy)].[Teams with Data1]' type-v2='filter' w='16000' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -7566,8 +7566,8 @@ I calculated correlations for the luth data metrics over 3-month periods since w
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='900' minheight='900' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='96' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='95' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='98' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='97' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='7625' id='8' mode='checkdropdown' name='Sample Size HBP' param='[federated.01i2cxh1jg5mm71ezowic14jtw7g].[none:NBA_team:nk]' type-v2='filter' w='16800' x='74800' y='375'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
