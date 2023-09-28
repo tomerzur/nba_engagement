@@ -10,7 +10,6 @@ from sklearn.preprocessing import MinMaxScaler
 def read_data():
     luth_data = pd.read_excel("../nba harris brand platform cities.xlsx", sheet_name=[3, 4, 6, 7, 8, 9, 10], index_col=0, header=1)
     nba_team_performance = pd.read_excel("../nba harris brand platform cities.xlsx", sheet_name=[7], index_col=0, header=32, nrows=30)
-    #nba_team_performance_po = pd.read_excel("../nba harris brand platform cities.xlsx", sheet_name=[1], index_col=0, header=1, usecols='I:L')
     nba_hbp = pd.read_excel("../nba harris brand platform cities.xlsx", sheet_name=[2], index_col=0, header=0)
     return luth_data[3], luth_data[4], luth_data[6], nba_hbp[2], nba_team_performance[7], luth_data[8], luth_data[9], luth_data[10]
 
@@ -81,6 +80,7 @@ def process_data(luth_users, luth, samba, hbp, nba_team_perf, samba_total_users,
     nba_team_perf_rs['Month'] = pd.to_datetime(nba_team_perf_rs['Month'], format='%Y/%m/%d')
     nba_team_perf_po['Month'] = pd.to_datetime(nba_team_perf_po['Month'], format='%Y/%m/%d')
 
+
     # join samba total user data to samba data
     samba_total_users = samba_total_users.reset_index()
     samba = samba.reset_index().join(samba_total_users.set_index(['dma', 'month']), on=['dma', 'Month'])
@@ -92,8 +92,6 @@ def process_data(luth_users, luth, samba, hbp, nba_team_perf, samba_total_users,
     luth_total_users = luth_total_users.reset_index()
     luth = luth.reset_index().join(luth_total_users.set_index(['state', 'month']), on=['State', 'Month'])
     luth = luth.set_index(['State'])
-    #luth_part_of_season = luth_part_of_season.reset_index().join(luth_total_users.set_index(['state', 'month']), on=['State', 'Month'])
-    #luth_part_of_season = luth_part_of_season.set_index(['State'])
 
     # add month_of_season column - offseason=0
     nba_team_perf_rs['month_of_season'] = nba_team_perf_rs['Month'].apply(get_month_of_season)
@@ -298,7 +296,7 @@ def run_correlations(samba, nba_team_perf_rs, nba_team_perf_po, hbp, luth, luth_
     rs_corr_samba = rs_reg_data.corr()
     rs_corr_samba_spearman = rs_reg_data.corr(method='spearman')
 
-    # using scaled data
+    # using scaled data - note that in the Tableau dashboard I didn't use the correlations from the scaled data
     # instead of scaling use % of people who watched
     # compare % of users who watched game to # of games a team had
     rs_reg_data_s = nba_team_perf_rs.join(samba_by_team_month_scaled.set_index(['team', 'Month']), on=['Team', 'Month'])
@@ -440,12 +438,6 @@ def run_correlations(samba, nba_team_perf_rs, nba_team_perf_po, hbp, luth, luth_
 
     nba_team_perf_po['Team Level'] = nba_team_perf_po['Team'].apply(get_team_level)
     nba_team_perf_po = nba_team_perf_po.groupby(['Month', 'Team Level']).sum().reset_index()
-    # nba_team_perf_po['win %'] = nba_team_perf_po['games won'] / nba_team_perf_po['games played']
-    # # cum games played should be sum of games won in previous months
-    # cum_games_played = get_cum_games(nba_team_perf_po['games played'])
-    # nba_team_perf_po['cum. games played'] = cum_games_played
-    # nba_team_perf_po['cum. win %'] = nba_team_perf_po['cum. games won'] / nba_team_perf_po['cum. games played']
-    # nba_team_perf_po['cum. win %'] = nba_team_perf_po['cum. win %'].replace(np.nan, 0)
 
     luth_po_corr_data = nba_team_perf_po.join(luth.set_index(['Team Level', 'Month']),
                                               on=['Team Level', 'Month'])
@@ -456,7 +448,6 @@ def run_correlations(samba, nba_team_perf_rs, nba_team_perf_po, hbp, luth, luth_
     po_corr_luth = luth_po_corr_data.corr()
     po_corr_luth_spearman = luth_po_corr_data.corr(method='spearman')
 
-    print()
 
 
 if __name__ == '__main__':
