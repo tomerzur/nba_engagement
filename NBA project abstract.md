@@ -9,7 +9,7 @@ Winning is the goal of a professional sports team, but does winning impact the o
 
 I used data from three different data sources. One was a syndicated brand tracker (Harris Brand Platform) which interviews approximately 900 people a month about the NBA brand from April 2021 to October 2022. This tracker measures many intangibles that are integral to brand health. I combined this data with Samba TV data from the same time period, which provides us with passive viewing behavior of approximately 2.5 million US TV viewers per month. Finally, I integrated digital engagement data from a metered panel called Luth – which takes a permissioned panel of 35,000 US users and measures their activity on digital devices over the same time window. The elements from each data source are shown in the below table.
 
-![graphic 1](graphic1.png)
+![graphic 1](images/graphic1.png)
 
 I aggregated the data by NBA market to get the correlations of these metrics with local team performance. I also looked at metro areas that do not have a team or that are near multiple teams and compared my results in each of the different areas.
 
@@ -17,7 +17,7 @@ I aggregated the data by NBA market to get the correlations of these metrics wit
 
 There seems to be evidence for revenue sharing when looking at local engagement in the NBA with non-playoff teams. I was expecting the playoff viewership to vary by NBA market depending on if the team made it to the playoffs. Surprisingly, while playoff teams have more local viewership during the playoffs than non-playoff teams, both playoff and non-playoff teams have a comparable viewership increase during the playoff window that is unique to the NBA footprint. 
 
-![graphic 2](graphic2.png)
+![graphic 2](images/graphic2.png)
 
 Interestingly, performance in a single month is not as heavily correlated with digital engagement as cumulative season performance to date. Stringing together a winning streak is not enough; rather, what does matter is sustained success. Being a better team is only slightly correlated with local mobile/web interactions. Perhaps most importantly, the NBA’s brand image metrics – such as its brand approval and reputation – in an area were not correlated with the local team’s performance. 
 
